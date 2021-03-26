@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electron UI | Alert</title>
+    <link rel="stylesheet" href="../componentsStyle.css">
+    <link rel="stylesheet" href="../indexStyle.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="../index.js"></script>
+</head>
+<body>
+    <div class="pagewrap">
+        <nav class="nav-bar">
+            <div id="navBar" class="leftnav">
+                <ul>
+                    <li><a href="#" class="left-nav-options left-nav-heading">ElectronUI</a></li>
+                    <li><a href="../index.html" class="left-nav-options">Home</a></li>
+                    <li><a href="../components.html" class="left-nav-options">Components</a></li>
+                    <li><a href="avtar.html" class="component-list">Avtaar</a></li>
+                    <li><a href="alert.html" class="component-list">Alert</a></li>
+                </ul>
+            </div>
+            <img src="../images/hamburger-white.svg" alt="hamburger" class="hamburger" onclick="openNav()">
+            <div class="right-nav">
+                <ul>
+                    <li><img src="../images/GitHub-Icon.svg" alt="GitHub" class="github" height="32px" width="32px"></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main onclick="closeNav()">
+            <div id="alert" class="component-container">
+                <h2>Alert</h2>
+                <p>Alert is alert and you cannot do anything about it.</p>
+                <div class="component">
+                    <h3>Simple Alerts</h3>
+
+                    <div class="alert error">
+                        <i class="fa fa-exclamation-circle fa-icon"></i>
+                        <span>This is an error alert!</span>
+                    </div>
+
+                    <div class="alert warning">
+                        <i class="fa fa-exclamation-triangle fa-icon"></i>
+                        <span>This is an warning alert!</span>
+                    </div>
+
+                    <div class="alert info">
+                        <i class="fa  fa-info-circle fa-icon"></i>
+                        <span>This is an info alert!</span>
+                    </div>
+
+                    <div class="alert success">
+                        <i class="fa fa-check-square-o fa-icon"></i>
+                        <span>This is an success alert!</span>
+                    </div>
+
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=cobalt&wt=sharp&l=htmlmixed&ds=true&dsyoff=100px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=10px&lh=185%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520error%2522%253E%250A%2520%2520%2509%253Ci%2520class%253D%2522fa%2520fa-exclamation-circle%2520fa-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2509%253Cspan%253EThis%2520is%2520an%2520error%2520alert%21%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520warning%2522%253E%250A%2509%253Ci%2520class%253D%2522fa%2520fa-exclamation-triangle%2520fa-icon%2522%253E%253C%252Fi%253E%250A%2509%253Cspan%253EThis%2520is%2520an%2520warning%2520alert%21%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520info%2522%253E%250A%2509%253Ci%2520class%253D%2522fa%2520%2520fa-info-circle%2520fa-icon%2522%253E%253C%252Fi%253E%250A%2509%253Cspan%253EThis%2520is%2520an%2520info%2520alert%21%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520success%2522%253E%250A%2509%253Ci%2520class%253D%2522fa%2520fa-check-square-o%2520fa-icon%2522%253E%253C%252Fi%253E%250A%2509%253Cspan%253EThis%2520is%2520an%2520success%2520alert%21%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
