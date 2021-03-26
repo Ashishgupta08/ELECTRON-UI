@@ -10,6 +10,7 @@
     :root{
         --primary-color : #152A5A;
         --secondary-color : #323948;
+        --bg-color : #EFEFEF;
     }
     
     *, *::before, *::after{
@@ -22,12 +23,6 @@
     .pagewrap {
         display: flex;
         flex-direction: column;
-    }
-    
-    main {
-        flex-grow: 1;
-        border: 1px solid black;
-        height: 200px;
     }
     
     .nav-bar {
@@ -125,8 +120,21 @@
         width: 100%;
       }
 
-      footer {
-        border: 1px solid black;
+      main {
+        flex-grow: 1;
       }
 
+      .main-content {
+        background-color: var(--bg-color);
+        margin: 0.5rem;
+        padding: 1rem 2rem;
+        border-radius: 0.5rem;
+        text-align: left;
+      }
+
+      iframe {
+          border: 0;
+          transform: scale(1);
+          overflow: hidden;
+      }
   }
