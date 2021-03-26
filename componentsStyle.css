@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+@media (min-width:320px)  {
+
+    body {
+        font-family: 'Merriweather', sans-serif;
+     }
+
+    :root{
+        --primary-color : #152A5A;
+        --secondary-color : #323948;
+        --primary-hover-color : #0e1d3e;
+        --secondary-hover-color: #37393f;
+        --text-color : #FFFFF2;
+     }
+
+     .primary-button {
+        margin: 1rem;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 0.5rem;
+        background-color: var(--primary-color);
+        color: var(--text-color);
+     }
+
+     .primary-button:hover {
+        background-color: var(--primary-hover-color);
+     }
+
+     .primary-button::after{
+        background-color: var(--primary-color);
+        color: var(--text-color);
+     }
+
+     .secondary-button {
+        margin: 1rem;
+        padding: 0.5rem 1rem;
+        border: 1px solid var(--secondary-color);
+        border-radius: 0.5rem;
+        background-color: var(--text-color);
+        color: var(--secondary-color);
+     }
+
+     .secondary-button:hover {
+        border: none;
+        color: var(--text-color);
+        background-color: var(--secondary-hover-color);
+     }
+}

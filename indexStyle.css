@@ -117,6 +117,10 @@
         letter-spacing: 0.1rem;
       }
 
+      .btn {
+        /* display: block; */
+      }
+
       footer {
         border: 1px solid black;
       }
