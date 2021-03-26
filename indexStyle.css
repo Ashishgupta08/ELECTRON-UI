@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
+ @media (min-width:320px)  {
+
+    body {
+        font-family: 'Merriweather', sans-serif;
+     }
+    
+    :root{
+        --primary-color : #152A5A;
+        --secondary-color : #323948;
+    }
+    
+    *, *::before, *::after{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        width: inherit; 
+     }
+
+    .pagewrap {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    main {
+        flex-grow: 1;
+        border: 1px solid black;
+        height: 200px;
+    }
+    
+    .nav-bar {
+        background-color: var(--primary-color);
+        padding: 0.5rem 2rem;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .leftnav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(255, 255, 255);
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+    
+    .leftnav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: ;
+        color: #818181;
+        display: block;
+        transition: 0.1s;
+      }
+      
+      .leftnav a:hover {
+        color: #f1f1f1;
+      }
+      
+      .leftnav .closebtn {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+
+      .nav-option{
+        color: white;
+        font-size: 2.5rem;
+        font-weight: 500;
+        flex: 1 0 auto;
+      }
+
+      .left-nav-heading {
+        letter-spacing: 0.1rem;
+        font-family: 'Electrolize', sans-serif;
+        font-weight: bold;
+      }
+
+      .right-nav{
+        font-size: 2.5rem;
+        font-weight: 500;
+        flex: 0 1 auto;
+          
+      }
+
+      .right-nav ul {
+          list-style-type: none;
+      }
+
+      .head {
+        margin: 1rem;
+        text-align: center;
+      }
+
+      .head-img {
+        height: 128px;
+        width: 128px;
+      }
+
+      .head-heading {
+        color: var(--primary-color);
+        padding: 1rem 0;
+        letter-spacing: 0.3rem;
+        font-family: 'Electrolize', sans-serif;
+      }
+
+      .head-content {
+        color: var(--secondary-color);
+        padding: 0;
+        letter-spacing: 0.1rem;
+      }
+
+      footer {
+        border: 1px solid black;
+      }
+
+  }
