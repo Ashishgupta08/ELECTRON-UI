@@ -46,4 +46,20 @@
         color: var(--text-color);
         background-color: var(--secondary-hover-color);
      }
+
+     .avtar {
+         height: 48px;
+         width: 48px;
+         border-radius: 50%;
+     }
+
+     .sm {
+        height: 32px !important;
+         width: 32px !important;
+     }
+
+     .lg {
+         height: 64px !important;
+         width: 64px !important;
+     }
 }

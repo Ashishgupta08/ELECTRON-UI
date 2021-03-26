@@ -11,6 +11,8 @@
         --primary-color : #152A5A;
         --secondary-color : #323948;
         --bg-color : #EFEFEF;
+        --dark-color : #272C34;
+        --light-color : #9e9e9e;
     }
     
     *, *::before, *::after{
@@ -44,17 +46,16 @@
         transition: 0.5s;
     }
     
-    .leftnav a {
+    .left-nav-options {
         padding: 8px 8px 8px 32px;
         text-decoration: none;
-        font-size: ;
-        color: #818181;
+        color: var(--dark-color);
         display: block;
         transition: 0.1s;
       }
-      
-      .leftnav a:hover {
-        color: #f1f1f1;
+
+      .component-list {
+        margin-left: 3rem;
       }
       
       .leftnav .closebtn {
@@ -134,7 +135,21 @@
 
       iframe {
           border: 0;
-          transform: scale(1);
           overflow: hidden;
+          margin: 1rem 0;
+      }
+
+      .component-container {
+          border-color: black;
+          margin: 0.1rem;
+          padding: 0.5rem 1rem ;
+          border-radius: 0.5rem;
+      }
+
+      .component {
+          border: 1px solid var(--light-color);
+          border-radius: 0.5rem;
+          padding: 1rem;
+          margin: 1rem;
       }
   }
