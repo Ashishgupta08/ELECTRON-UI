@@ -130,6 +130,7 @@
       .btn {
         display: block;
         padding: 0.5rem 1rem !important;
+        margin: 1rem !important;
         width: 100%;
       }
 
