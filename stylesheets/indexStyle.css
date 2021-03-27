@@ -148,8 +148,7 @@
       iframe {
           border: 0;
           overflow: hidden;
-          margin: 1rem 0;
-          padding: 0 !important;
+          margin: auto;
       }
 
       .component-container h2{
@@ -168,6 +167,4 @@
           margin: 1rem;
           font-weight: 100;
       }
-
-      
   }
