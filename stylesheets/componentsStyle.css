@@ -21,39 +21,6 @@
         --success-bg-color : #81c784;
      }
 
-     .primary-button {
-        margin: 1rem 0;
-        padding: 0.5rem 1rem;
-        border: none;
-        border-radius: 0.5rem;
-        background-color: var(--primary-color);
-        color: var(--text-color);
-     }
-
-     .primary-button:hover {
-        background-color: var(--primary-hover-color);
-     }
-
-     .primary-button::after{
-        background-color: var(--primary-color);
-        color: var(--text-color);
-     }
-
-     .secondary-button {
-        margin: 1rem 0;
-        padding: 0.5rem 1rem;
-        border: 1px solid var(--secondary-color);
-        border-radius: 0.5rem;
-        background-color: transparent;
-        color: var(--secondary-color);
-     }
-
-     .secondary-button:hover {
-        border: none;
-        color: var(--text-color);
-        background-color: var(--secondary-hover-color);
-     }
-
      .avtar {
          height: 3rem;
          width: 3rem;
@@ -145,5 +112,30 @@
     .color-blue {
         background-color: #1976D2;
     }
+
+    .btn-primary {
+        margin: 1rem;
+        padding: 0.5rem 1rem;
+        border: 2px solid var(--primary-color);
+        border-radius: 0.5rem;
+        background-color: var(--primary-color);
+        color: var(--text-color);
+        min-width: 8rem;
+        font-weight: 500;
+        letter-spacing: 0.05rem;
+     }
+
+
+     .btn-secondary {
+        margin: 1rem;
+        padding: 0.5rem 1rem;
+        border: 2px solid var(--primary-color);
+        border-radius: 0.5rem;
+        background-color: transparent;
+        color: var(--primary-color);
+        min-width: 8rem;
+        font-weight: 500;
+        letter-spacing: 0.05rem;
+     }
 
 }
