@@ -67,19 +67,19 @@
         position: absolute;
         top: 0;
         left: 0;
-        font-size: 36px;
-        margin-left: 50px;
+        font-size: 2.25rem;
+        margin-left: 3.125rem;
       }
 
       .hamburger {
         flex: 0 1 auto;
-        height: 32px;
-        width: 32px;
+        height: 2rem;
+        width: 2rem;
       }
 
       .github {
-        height: 32px;
-        width: 32px;
+        height: 2rem;
+        width: 2rem;
         position: absolute;
         top: 8px;
         right: 10px;
@@ -110,8 +110,8 @@
       }
 
       .head-img {
-        height: 128px;
-        width: 128px;
+        height: 8rem;
+        width: 8rem;
       }
 
       .head-heading {

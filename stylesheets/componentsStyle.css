@@ -55,25 +55,24 @@
      }
 
      .avtar {
-         height: 48px;
-         width: 48px;
+         height: 3rem;
+         width: 3rem;
          border-radius: 50%;
          margin: 0.5rem;
      }
 
      .sm {
-         height: 32px !important;
-         width: 32px !important;
+         height: 2rem !important;
+         width: 2rem !important;
      }
 
      .lg {
-         height: 64px !important;
-         width: 64px !important;
+         height: 4rem !important;
+         width: 4rem !important;
      }
 
      .fa-icon {
-        color: var(--text-color);
-        margin: 0 0.5rem 0 0;
+        margin: 0 0.8rem 0 0;
     }
 
      .alert {
@@ -110,6 +109,41 @@
 
     .success {
         background-color: var(--success-bg-color);
+    }
+
+    .fa-envelope::before {
+        font-size: xx-large;
+    }
+
+    .fa-shopping-cart::before {
+        font-size: xx-large;
+    }
+
+    .badge-content {
+        color: var(--text-color);
+        margin: 0 !important;
+        padding: 0.01rem 0.3rem;
+        border-radius: 50%;
+        position: relative;
+    }
+
+    .badge-icon {
+        bottom: 1rem;
+        right: 1rem;
+    }
+
+    .badge-avtar {
+        bottom: 3rem;
+        right: 1.6rem;
+    }
+
+
+    .color-red {
+        background-color: #DC004E;
+    }
+
+    .color-blue {
+        background-color: #1976D2;
     }
 
 }
