@@ -148,7 +148,8 @@
       iframe {
           border: 0;
           overflow: hidden;
-          margin: auto;
+          padding: 0.8rem !important;
+          /* margin: 1rem !important; */
       }
 
       .component-container h2{
