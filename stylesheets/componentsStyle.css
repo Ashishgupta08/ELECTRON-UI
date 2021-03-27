@@ -71,17 +71,18 @@
          width: 64px !important;
      }
 
+     .fa-icon {
+        color: var(--text-color);
+        margin: 0 0.5rem 0 0;
+    }
+
      .alert {
         margin: 1rem;
         padding: 1rem;
         border-radius: 0.5rem;
         color: var(--text-color);
+        max-width: 20rem;
 
-    }
-
-    .fa-icon {
-        color: var(--text-color);
-        margin: 0 0.5rem 0 0;
     }
 
     .error {
