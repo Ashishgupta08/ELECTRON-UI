@@ -85,6 +85,17 @@
 
     }
 
+    .alert-title {
+        font-weight: 500;
+    }
+
+    .alert-description {
+        display: block;
+        padding-left: 1.5rem;
+        padding-top: 0.5rem;
+        font-size: 0.8rem;
+    }
+
     .error {
         background-color: var(--error-bg-color);
     }
@@ -100,4 +111,5 @@
     .success {
         background-color: var(--success-bg-color);
     }
+
 }
