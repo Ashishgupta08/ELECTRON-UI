@@ -166,4 +166,18 @@
           margin: 1rem;
           font-weight: 100;
       }
+
+      .component-button {
+          border: 1px solid var(--light-color);
+          border-radius: 0.5rem;
+          padding: 0.8rem;
+          margin: 1rem;
+          font-weight: 100;
+          text-align: center;
+      }
+
+      .component button {
+        margin-bottom: 00.5rem !important;
+      }
+
   }

@@ -19,6 +19,8 @@
         --warning-bg-color : #fff176;
         --info-bg-color : #64b5f6;
         --success-bg-color : #81c784;
+        --blue-color : #1976D2;
+        --red-color : #DC004E;
      }
 
      .avtar {
@@ -106,15 +108,15 @@
 
 
     .color-red {
-        background-color: #DC004E;
+        background-color: var(--red-color);
     }
 
     .color-blue {
-        background-color: #1976D2;
+        background-color: var(--blue-color);
     }
 
     .btn-primary {
-        margin: 1rem;
+        margin: 0.5rem;
         padding: 0.5rem 1rem;
         border: 2px solid var(--primary-color);
         border-radius: 0.5rem;
@@ -127,7 +129,7 @@
 
 
      .btn-secondary {
-        margin: 1rem;
+        margin: 0.5rem;
         padding: 0.5rem 1rem;
         border: 2px solid var(--primary-color);
         border-radius: 0.5rem;
@@ -137,5 +139,37 @@
         font-weight: 500;
         letter-spacing: 0.05rem;
      }
+
+     .btn-with-icon {
+        margin: 0.5rem;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 0.5rem;
+        color: var(--text-color);
+        min-width: 6rem;
+        font-weight: 500;
+        letter-spacing: 0.05rem;
+     }
+
+     .btn-icon {
+         margin: 00.5rem;
+        border: none;
+        color: var(--blue-color);
+        font-weight: 500;
+        letter-spacing: 0.05rem;
+        font-size: 2rem;
+        background-color: transparent;
+     }
+
+     .fa-trash::before{
+         font-size: 1rem;
+         margin: 0.5rem;
+     }
+
+     .fa-share-square::before{
+        font-size: 1rem;
+        margin: 0.5rem;
+     }
+
 
 }
