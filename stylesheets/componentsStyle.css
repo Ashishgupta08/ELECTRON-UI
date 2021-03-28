@@ -152,13 +152,22 @@
      }
 
      .btn-icon {
-         margin: 00.5rem;
+        margin: 00.5rem;
         border: none;
         color: var(--blue-color);
         font-weight: 500;
-        letter-spacing: 0.05rem;
         font-size: 2rem;
         background-color: transparent;
+     }
+
+     .btn-float {
+         margin: 0.5rem;
+         padding: 1rem;
+         border: 2px solid var(--blue-color);
+         background-color: var(--blue-color);
+         color: var(--text-color);
+         font-size: 1.5rem;
+         border-radius: 50%;
      }
 
      .fa-trash::before{
