@@ -150,12 +150,12 @@
           padding: 0.8rem !important;
       }
 
-      .component-container h2{
+      .component-container > h2{
           margin: 1rem;
           font-weight: bold;
       }
 
-      .component-container p{
+      .component-container > p{
           margin: 0.5rem 0.5rem 1rem 1rem;
       }
 
@@ -178,6 +178,11 @@
 
       .component button {
         margin-bottom: 00.5rem !important;
+      }
+
+      .component-card {
+        border: none !important;
+        background-color: #F5F5F5;
       }
 
   }
