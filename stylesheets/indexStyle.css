@@ -182,7 +182,7 @@
 
       .component-card {
         border: none !important;
-        background-color: #F5F5F5;
+        /* background-color: #F5F5F5; */
       }
 
   }
