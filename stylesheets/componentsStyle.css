@@ -186,8 +186,8 @@
 
      .simple-card {
         border: 1px solid var(--light-color);
-        background-color: var(--text-color);
-        border-radius: 1rem;    
+        background-color: transparent;
+        border-radius: 1rem; 
         text-align: left;
         padding: 1rem;
         margin: 1rem;
@@ -212,7 +212,7 @@
 
      .badge-card {
         border: 1px solid var(--light-color);
-        background-color: var(--text-color);
+        background-color: transparent;
         border-radius: 1rem;
         text-align: left;
         padding: 1rem;
@@ -246,7 +246,7 @@
 
      .img-card {
         border: 1px solid var(--light-color);
-        background-color: var(--text-color);
+        background-color: transparent;
         border-radius: 1rem;
         text-align: center;
         margin: 1rem 2rem;
