@@ -250,30 +250,30 @@
         border-radius: 1rem;
         text-align: center;
         margin: 1rem 2rem;
+        padding: 0.5rem;
+        width: max-content;
      }
 
      .img-container {
          position: relative;
-         height: 280px;
-         width: 220px;
          margin: 0 !important;
          padding: 0 0.5rem;
          display: flex;
      }
 
      .img-container > img {
-         height: auto;
-         width: auro;
-         /* margin: 0 !important; */
+         height: 15em;
+         width: auto;
      }
 
      .trending {
         position: absolute;
-        top: 1rem;
-        right: -1rem;
+        top: 0.5rem;
+        right: -0.5rem;
         width: auto;
         border: none;
-        font-size: 0.8rem;
+        font-size: 0.6rem;
+        letter-spacing: 0.1em;
         padding: 0.5rem !important;
         margin: 0 !important;
         background-color: var(--red-color);
