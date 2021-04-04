@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electron UI | List</title>
+    <link rel="stylesheet" href="../stylesheets/componentsStyle.css">
+    <link rel="stylesheet" href="../stylesheets/indexStyle.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="../javascripts/index.js"></script>
+</head>
+<body>
+    <div class="pagewrap">
+
+        <nav class="nav-bar">
+            <div id="navBar" class="leftnav">
+                <ul>
+                    <li><a href="#" class="left-nav-options left-nav-heading">ElectronUI</a></li>
+                    <li><a href="../index.html" class="left-nav-options">Home</a></li>
+                    <li><a href="components.html" class="left-nav-options">Components</a></li>
+                    <li><a href="avtar.html" class="component-list">Avtaar</a></li>
+                    <li><a href="alert.html" class="component-list">Alert</a></li>
+                    <li><a href="badge.html" class="component-list">Badge</a></li>
+                    <li><a href="button.html" class="component-list">Button</a></li>
+                    <li><a href="card.html" class="component-list">Card</a></li>
+                    <li><a href="image.html" class="component-list">Image</a></li>
+                    <li><a href="textbox.html" class="component-list">TextBox</a></li>
+                    <li><a href="list.html" class="component-list">List</a></li>
+                    <li><a></a></li>
+                </ul>
+            </div>
+            <img src="../images/hamburger-white.svg" alt="hamburger" class="hamburger" onclick="openNav()">
+            <div class="right-nav">
+                <ul>
+                    <li><img src="../images/GitHub-Icon.svg" alt="GitHub" class="github" height="32px" width="32px"></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main onclick="closeNav()">
+            <div class="component-container">
+                <h2>List</h2>
+                <p>List is a list and you cannot do anything about it.</p>
+
+                <!-- Simple List -->
+                <div class="component">
+                    <h3>Simple List</h3>
+
+                    <ul class="list simple-list">
+                        <li class="simple-list-items">Item 1</li>
+                        <li class="simple-list-items">Item 2</li>
+                        <li class="simple-list-items">Item 3</li>
+                        <li class="simple-list-items">Item 4</li>
+                        <li class="simple-list-items">Item 5</li>
+                    </ul>
+
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=cobalt&wt=sharp&l=htmlmixed&ds=true&dsyoff=100px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=10px&lh=185%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522list%2520simple-list%2522%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522simple-list-items%2522%253EItem%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522simple-list-items%2522%253EItem%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522simple-list-items%2522%253EItem%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522simple-list-items%2522%253EItem%25204%253C%252Fli%253E%250A%2509%253Cli%2520class%253D%2522simple-list-items%2522%253EItem%25205%253C%252Fli%253E%250A%253C%252Ful%253E"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <!-- Stacked List -->
+                <div class="component">
+                    <h3>Stacked List</h3>
+
+                    <ul class="list stacked-list">
+                        <li class="stacked-list-items">
+                            <div style="display: flex; justify-content: space-between;">
+                                <div>
+                                    <i class="fa fa-linkedin-square stacked-list-icons"></i>
+                                    LinkedIn
+                                </div>
+                                <i id="arrowdown" class="fa fa-angle-down stacked-list-icons down" onclick="openListContent()"></i>
+                                <i id="arrowup" class="up fa fa-angle-up stacked-list-icons" onclick="closeListContent()"></i>
+                            </div>
+                            
+                            <div id="list-content1" class="stacked-list-items-content">
+                                You have 5 new notifications and 10 pending connection request.
+                            </div>
+                        </li>
+                        <li class="stacked-list-items">
+                            <i class="fa fa-instagram stacked-list-icons"></i>
+                            Instagram
+                        </li>
+                        <li class="stacked-list-items">
+                            <i class="fa fa-facebook-square stacked-list-icons"></i>
+                            Facebook
+                        </li>
+                        <li class="stacked-list-items">
+                            <i class="fa fa-whatsapp stacked-list-icons"></i>
+                            WhatsApp
+                        </li>
+                        <li class="stacked-list-items">
+                            <i class="fa fa-snapchat-square stacked-list-icons"></i>
+                            Snapchat
+                        </li>
+                    </ul>
+
+                </div>
+             
+            </div>
+        </main>
+    </div>
+</body>
+</html>
