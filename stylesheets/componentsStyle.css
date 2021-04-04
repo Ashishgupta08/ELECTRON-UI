@@ -296,5 +296,41 @@
      .price {
          color: var(--dark-color) !important;
      }
-     
+
+     .horizontal-card{
+         display: flex;
+         /* padding: 0.25rem; */
+         margin: 1rem 0.5rem;
+         /* border: 0.1rem solid var(--light-color); */
+         /* border-radius: 0.5rem; */
+         box-shadow: 4px 4px 15px var(--secondary-hover-color);
+     }
+
+     .horizontal-card img {
+         height: 10em;
+         width: 50%;
+         margin-right: 0.5rem;
+     }
+
+     .horizontal-card-text {
+         padding: 0.5rem 0;
+         position: relative;
+     }
+     .horizontal-card-heading {
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin-bottom: 00.25rem;
+     }
+
+     .horizontal-card-primary-text {
+        font-size: 0.75rem;
+     }
+
+     .horizontal-card-secondary-text {
+        font-size: 0.6rem;
+        color: var(--light-color);
+        margin: 0.5rem 0;
+        position: absolute;
+        bottom: 0;
+     }
 }
