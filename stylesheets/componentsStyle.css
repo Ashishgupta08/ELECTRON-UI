@@ -299,11 +299,8 @@
 
      .horizontal-card{
          display: flex;
-         /* padding: 0.25rem; */
          margin: 1rem 0.5rem;
-         /* border: 0.1rem solid var(--light-color); */
-         /* border-radius: 0.5rem; */
-         box-shadow: 4px 4px 15px var(--secondary-hover-color);
+         box-shadow: 6px 6px 16px 0px rgb(0 0 0 / 80%);
      }
 
      .horizontal-card img {
@@ -332,5 +329,22 @@
         margin: 0.5rem 0;
         position: absolute;
         bottom: 0;
+     }
+
+     /* IMAGE */
+
+     .respnosive-img {
+        margin: 2rem 0;
+        width: 100%;
+        height: auto;
+        max-width: 25rem;
+     }
+
+     .round-img {
+        border-radius: 50%;
+        margin: 2rem;
+        width: 80%;
+        height: auto;
+        max-width: 15rem;
      }
 }
