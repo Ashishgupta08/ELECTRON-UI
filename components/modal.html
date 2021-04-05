@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Electron UI | Image</title>
+    <title>Electron UI | Modal</title>
     <link rel="stylesheet" href="../stylesheets/componentsStyle.css">
     <link rel="stylesheet" href="../stylesheets/indexStyle.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
@@ -41,33 +41,28 @@
 
         <main onclick="closeNav()">
             <div class="component-container">
-                <h2>Image</h2>
-                <p>Image is an image and you cannot do anything about it.</p>
+                <h2>Modal</h2>
+                <p>Modal is a modal and you cannot do anything about it.</p>
 
-                <!-- Responsive Image -->
+                <!-- Simple Modal -->
                 <div class="component">
-                    <h3>Responsive Image</h3>
+                    <h3>Simple Modal</h3>
 
-                    <img src="../images/demo-img4" alt="respnosive-img" class="respnosive-img">
-                    
+                    <button class="btn-primary modal-btn" onclick="openSimpleModal()">Click Me!</button>
+
+                    <div id="modal1" class="simple-modal">
+                        <div class="modal-content">
+                            <h3>Modal Title</h3>
+                            <p>Body of the modal</p>
+                            <button class="btn-primary" onclick="closeSimpleModal()">Close</button>
+                        </div>
+                    </div>
+
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=cobalt&wt=sharp&l=htmlmixed&ds=true&dsyoff=100px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=10px&lh=185%25&si=false&es=2x&wm=false&code=%253Cimg%2520src%253D%2522..%252Fimages%252Fdemo-img4%2522%2520alt%253D%2522respnosive-img%2522%2520class%253D%2522respnosive-img%2522%253E"
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=cobalt&wt=sharp&l=htmlmixed&ds=true&dsyoff=100px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=10px&lh=185%25&si=false&es=2x&wm=false&code=%253Cdiv%2520id%253D%2522modal1%2522%2520class%253D%2522simple-modal%2522%253E%250A%2509%253Cdiv%2520class%253D%2522modal-content%2522%253E%250A%2509%2509%253Ch3%253EModal%2520Title%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EBody%2520of%2520the%2520modal%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-primary%2522%2520onclick%253D%2522closeSimpleModal%28%29%2522%253EClose%253C%252Fbutton%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
 
-                </div>
-
-                <!-- Round Image -->
-                <div class="component">
-                    <h3>Round Image</h3>
-
-                    <img src="../images/demo-img5.png" alt="round-img" class="round-img">
-
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=cobalt&wt=sharp&l=htmlmixed&ds=true&dsyoff=100px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=10px&lh=185%25&si=false&es=2x&wm=false&code=%253Cimg%2520src%253D%2522..%252Fimages%252Fdemo-img5.png%2522%2520alt%253D%2522round-img%2522%2520class%253D%2522round-img%2522%253E"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
-                    
                 </div>
              
             </div>

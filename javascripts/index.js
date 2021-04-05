@@ -18,7 +18,10 @@ function closeListContent() {
   document.getElementById("arrowdown").style.display = "block";
 }
 
-function onLoad() {
-  document.getElementById("arrowup").style.display = "none";
-  document.getElementById("arrowdown").style.display = "block";
+function openSimpleModal() {
+  document.getElementById("modal1").style.display = "block";
+}
+
+function closeSimpleModal() {
+  document.getElementById("modal1").style.display = "none";
 }
