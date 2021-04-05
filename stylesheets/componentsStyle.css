@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 
-@media (min-width:320px)  {
+@media only screen and (max-device-width: 480px)  {
 
     body {
         font-family: 'Merriweather', sans-serif;
@@ -462,7 +462,7 @@
 
      .nav-right ul {
          margin: 0 !important;
-         padding-left: 1.5rem;
+         padding-left: 2rem;
          list-style-type: none;
          display: flex;
          font-size: 0.7rem;
