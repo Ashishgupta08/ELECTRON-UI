@@ -462,7 +462,7 @@
 
      .nav-right ul {
          margin: 0 !important;
-         padding-left: 1rem;
+         padding-left: 1.5rem;
          list-style-type: none;
          display: flex;
          font-size: 0.7rem;
