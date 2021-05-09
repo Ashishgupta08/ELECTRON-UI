@@ -166,14 +166,31 @@ body {
 
       .component-card {
         border: none !important;
-        /* background-color: #F5F5F5; */
+      }
+
+      button a {
+        color: var(--text-color);
+        text-decoration: none;
+      }
+
+      button a:hover, button a:visited, button a:active, button a:link {
+        color: var(--text-color) !important;
       }
 
 }
 
 @media only screen and (min-device-width: 481px) {
 
- #page {
+  button a {
+    color: var(--text-color);
+    text-decoration: none;
+  }
+
+  button a:hover, button a:visited, button a:active, button a:link {
+    color: var(--text-color) !important;
+  }
+  
+#page {
   display: grid;
   height: 250px;
   grid-template-areas:"head head"
