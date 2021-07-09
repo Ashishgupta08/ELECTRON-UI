@@ -179,6 +179,10 @@ body {
 
 }
 
+.github-link{
+  color: var(--primary-color);
+}
+
 @media only screen and (min-device-width: 481px) {
 
   button a {
