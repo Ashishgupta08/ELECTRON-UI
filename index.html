@@ -10,14 +10,30 @@
     <script src="./assests/js/index.js"></script>
 </head>
 <body>
-    <div class="pagewrap">
+    <section id="index">
 
-        <nav class="nav-bar">
+        <header class="nav-bar-top">
+            <div class="nav-bar-top-left">
+                <img src="./assests/images/hamburger-white.svg" alt="hamburger" class="hamburger" onclick="openNav()">
+                <h1><a href="index.html" class="nav-heading">ELECTRON UI</a></h1>
+            </div>
+            <div class="nav-bar-top-right">
+                <ul>
+                    <li>
+                        <a href="https://github.com/Ashishgupta08/ELECTRON-UI/tree/development">
+                            <img src="./assests/images/GitHub-Icon.svg" alt="GitHub" class="github" height="32px" width="32px">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <nav>
             <div id="navBar" class="leftnav">
                 <ul>
-                    <li><a href="#" class="left-nav-options left-nav-heading">ElectronUI</a></li>
+                    <li class="left-nav-heading"><a href="#" class="left-nav-options">ElectronUI</a></li>
                     <li><a href="index.html" class="left-nav-options">Home</a></li>
-                    <li><a href="components/components.html" class="left-nav-options">Components</a></li>
+                    <li><a href="#" class="left-nav-options">Components</a></li>
                     <li><a href="components/avtar.html" class="component-list">Avtaar</a></li>
                     <li><a href="components/alert.html" class="component-list">Alert</a></li>
                     <li><a href="components/badge.html" class="component-list">Badge</a></li>
@@ -30,41 +46,51 @@
                     <li><a href="components/modal.html" class="component-list">Modal</a></li>
                 </ul>
             </div>
-            <img src="./assests/images/hamburger-white.svg" alt="hamburger" class="hamburger" onclick="openNav()">
-            <div class="right-nav">
-                <ul>
-                    <li><img src="./assests/images/GitHub-Icon.svg" alt="GitHub" class="github" height="32px" width="32px"></li>
-                </ul>
-            </div>
         </nav>
 
-        <header onclick="closeNav()">
+        <main onclick="closeNav()">
             <div class="head">
                 <img src="./assests/images/Logo.png" alt="Logo" class="head-img">
                 <h1 class="head-heading">ELECTRON UI</h1>
                 <p class="head-content">
                     Quickly design and customize the style of your website with Electron UI.
+                    <br />
+                    Rapidly build modern websites without ever leaving your HTML.
                 </p>
-                <button class="btn-primary btn">Get Started</button>
-                <button class="btn-secondary btn">Download</button>
+                <button class="btn-primary btn"><a href="components/avtar.html" class="link">Get Started</a></button>
             </div>
-        </header>
 
-        <main onclick="closeNav()">
             <div class="main-content">
-                <img src="./assests/images/Installation-Icon.svg" alt="Install" height="32px" width="32px" class="main-img">
-                <h2>Installation</h2>
-                <p>
+                <div>
+                    <img src="./assests/images/Installation-Icon.svg" alt="Install" class="main-img">
+                    <h3>Installation</h3>
+                    <p>
+                        Just download the stylesheet and use below HTML code in your file.
+                    </p>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=cobalt&wt=sharp&l=htmlmixed&ds=true&dsyoff=100px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=10px&lh=185%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522componentsStyle.css%2522%253E"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
 
-                </p>
-                <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=cobalt&wt=sharp&l=htmlmixed&ds=true&dsyoff=100px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=10px&lh=185%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522componentsStyle.css%2522%253E"
-                    sandbox="allow-scripts allow-same-origin">
-                </iframe>
+                <div>
+                    <img src="./assests/images/Setting-Icon.svg" alt="Install" class="main-img">
+                    <h3>Usage</h3>
+                    <p>
+                        ELECTRON UI components work without any additional setup.
+                    </p>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=cobalt&wt=sharp&l=htmlmixed&ds=true&dsyoff=100px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=10px&lh=185%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522componentsStyle.css%2522%253E"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
             </div>
         </main>
 
-        <!-- <footer onclick="closeNav()">Footer</footer> -->
-    </div>
+        <footer>
+            <p>Created & Designed by Ashish Gupta</p>
+        </footer>
+
+    </section>
 </body>
 </html>

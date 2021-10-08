@@ -11,30 +11,39 @@
     <script src="../assests/js/index.js"></script>
 </head>
 <body>
-    <div class="pagewrap">
+    <section id="page">
+        <header class="nav-bar-top">
+            <div class="nav-bar-top-left">
+                <img src="../assests/images/hamburger-white.svg" alt="hamburger" class="hamburger" onclick="openNav()">
+                <h1><a href="../index.html" class="nav-heading">ELECTRON UI</a></h1>
+            </div>
+            <div class="nav-bar-top-right">
+                <ul>
+                    <li>
+                        <a href="https://github.com/Ashishgupta08/ELECTRON-UI/tree/development">
+                            <img src="../assests/images/GitHub-Icon.svg" alt="GitHub" class="github" height="32px" width="32px">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
 
-        <nav class="nav-bar">
+        <nav>
             <div id="navBar" class="leftnav">
                 <ul>
-                    <li><a href="#" class="left-nav-options left-nav-heading">ElectronUI</a></li>
+                    <li class="left-nav-heading"><a href="#" class="left-nav-options">ElectronUI</a></li>
                     <li><a href="../index.html" class="left-nav-options">Home</a></li>
-                    <li><a href="components.html" class="left-nav-options">Components</a></li>
+                    <li><a href="#" class="left-nav-options">Components</a></li>
                     <li><a href="avtar.html" class="component-list">Avtaar</a></li>
                     <li><a href="alert.html" class="component-list">Alert</a></li>
                     <li><a href="badge.html" class="component-list">Badge</a></li>
                     <li><a href="button.html" class="component-list">Button</a></li>
                     <li><a href="card.html" class="component-list">Card</a></li>
                     <li><a href="image.html" class="component-list">Image</a></li>
-                    <li><a href="textbox.html" class="component-list">TextBox</a></li>
+                    
                     <li><a href="list.html" class="component-list">List</a></li>
                     <li><a href="navigation.html" class="component-list">Navigation</a></li>
                     <li><a href="modal.html" class="component-list">Modal</a></li>
-                </ul>
-            </div>
-            <img src="../assests/images/hamburger-white.svg" alt="hamburger" class="hamburger" onclick="openNav()">
-            <div class="right-nav">
-                <ul>
-                    <li><img src="../assests/images/GitHub-Icon.svg" alt="GitHub" class="github" height="32px" width="32px"></li>
                 </ul>
             </div>
         </nav>
@@ -42,10 +51,10 @@
         <main onclick="closeNav()">
             <div class="component-container">
                 <h2>Image</h2>
-                <p>Image is an image and you cannot do anything about it.</p>
+                <p>Some examples of responsive images which can be used in any container element.</p>
 
                 <!-- Responsive Image -->
-                <div class="component">
+                <div class="component-bg">
                     <h3>Responsive Image</h3>
 
                     <img src="../assests/images/demo-img4" alt="respnosive-img" class="respnosive-img">
@@ -58,7 +67,7 @@
                 </div>
 
                 <!-- Round Image -->
-                <div class="component">
+                <div class="component-bg">
                     <h3>Round Image</h3>
 
                     <img src="../assests/images/demo-img5.png" alt="round-img" class="round-img">
@@ -69,9 +78,9 @@
                     </iframe>
                     
                 </div>
-             
             </div>
         </main>
-    </div>
+
+    </section>
 </body>
 </html>

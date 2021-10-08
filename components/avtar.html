@@ -11,30 +11,39 @@
     <script src="../assests/js/index.js"></script>
 </head>
 <body>
-    <div class="pagewrap">
+    <section id="page">
+        <header class="nav-bar-top">
+            <div class="nav-bar-top-left">
+                <img src="../assests/images/hamburger-white.svg" alt="hamburger" class="hamburger" onclick="openNav()">
+                <h1><a href="../index.html" class="nav-heading">ELECTRON UI</a></h1>
+            </div>
+            <div class="nav-bar-top-right">
+                <ul>
+                    <li>
+                        <a href="https://github.com/Ashishgupta08/ELECTRON-UI/tree/development">
+                            <img src="../assests/images/GitHub-Icon.svg" alt="GitHub" class="github" height="32px" width="32px">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
 
-        <nav class="nav-bar">
+        <nav>
             <div id="navBar" class="leftnav">
                 <ul>
-                    <li><a href="#" class="left-nav-options left-nav-heading">ElectronUI</a></li>
+                    <li class="left-nav-heading"><a href="#" class="left-nav-options">ElectronUI</a></li>
                     <li><a href="../index.html" class="left-nav-options">Home</a></li>
-                    <li><a href="components.html" class="left-nav-options">Components</a></li>
+                    <li><a href="#" class="left-nav-options">Components</a></li>
                     <li><a href="avtar.html" class="component-list">Avtaar</a></li>
                     <li><a href="alert.html" class="component-list">Alert</a></li>
                     <li><a href="badge.html" class="component-list">Badge</a></li>
                     <li><a href="button.html" class="component-list">Button</a></li>
                     <li><a href="card.html" class="component-list">Card</a></li>
                     <li><a href="image.html" class="component-list">Image</a></li>
-                    <li><a href="textbox.html" class="component-list">TextBox</a></li>
+                    
                     <li><a href="list.html" class="component-list">List</a></li>
                     <li><a href="navigation.html" class="component-list">Navigation</a></li>
                     <li><a href="modal.html" class="component-list">Modal</a></li>
-                </ul>
-            </div>
-            <img src="../assests/images/hamburger-white.svg" alt="hamburger" class="hamburger" onclick="openNav()">
-            <div class="right-nav">
-                <ul>
-                    <li><img src="../assests/images/GitHub-Icon.svg" alt="GitHub" class="github" height="32px" width="32px"></li>
                 </ul>
             </div>
         </nav>
@@ -42,13 +51,20 @@
         <main onclick="closeNav()">
             <div id="avtar" class="component-container">
                 <h2>Avtar</h2>
-                <p>Avtar is avtar and you cannot do anything about it.</p>
-                <div class="component">
-
+                <p>Some examples of avtaar that can be used with different sizes.</p>
+                <div class="component-bg">
+                    <p>Regular Avtaar</p>
                     <div class="component">
                         <img src="../assests/images/male-avtar.svg" alt="male-avtar" class="avtar">
                         <img src="../assests/images/female-avtar.svg" alt="female-avtar" class="avtar">
                     </div>
+                    
+                    <!-- <pre>
+                        <code>
+                            &lt;img src="../images/male-avtar.svg" alt="male-avtar" class="avtar">
+                            &lt;img src="../images/female-avtar.svg" alt="female-avtar" class="avtar">
+                        </code>
+                    </pre> -->
                     
                     <iframe
                         src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=cobalt&wt=sharp&l=htmlmixed&ds=true&dsyoff=100px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=10px&lh=185%25&si=false&es=2x&wm=false&code=%253Cimg%2520src%253D%2522..%252Fimages%252Fmale-avtar.svg%2522%2520alt%253D%2522male-avtar%2522%2520class%253D%2522avtar%2522%253E%250A%253Cimg%2520src%253D%2522..%252Fimages%252Ffemale-avtar.svg%2522%2520alt%253D%2522female-avtar%2522%2520class%253D%2522avtar%2522%253E"
@@ -56,8 +72,8 @@
                     </iframe>
                 </div>
 
-                <div class="component">
-
+                <div class="component-bg">
+                    <p>Small Avtaar</p>
                     <div class="component">
                         <img src="../assests/images/male-avtar.svg" alt="male-avtar" class="avtar sm">
                         <img src="../assests/images/female-avtar.svg" alt="female-avtar" class="avtar sm">
@@ -69,8 +85,8 @@
                     </iframe>
                 </div>
 
-                <div class="component">
-
+                <div class="component-bg">
+                    <p>Large Avtaar</p>
                     <div class="component">
                         <img src="../assests/images/male-avtar.svg" alt="male-avtar" class="avtar lg">
                         <img src="../assests/images/female-avtar.svg" alt="female-avtar" class="avtar lg">
@@ -81,8 +97,8 @@
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
                 </div>
-            </div>
         </main>
-    </div>
+
+    </section>
 </body>
 </html>

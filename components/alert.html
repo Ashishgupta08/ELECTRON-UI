@@ -11,29 +11,39 @@
     <script src="../assests/js/index.js"></script>
 </head>
 <body>
-    <div class="pagewrap">
-        <nav class="nav-bar">
+    <section id="page">
+        <header class="nav-bar-top">
+            <div class="nav-bar-top-left">
+                <img src="../assests/images/hamburger-white.svg" alt="hamburger" class="hamburger" onclick="openNav()">
+                <h1><a href="../index.html" class="nav-heading">ELECTRON UI</a></h1>
+            </div>
+            <div class="nav-bar-top-right">
+                <ul>
+                    <li>
+                        <a href="https://github.com/Ashishgupta08/ELECTRON-UI/tree/development">
+                            <img src="../assests/images/GitHub-Icon.svg" alt="GitHub" class="github" height="32px" width="32px">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <nav>
             <div id="navBar" class="leftnav">
                 <ul>
-                    <li><a href="#" class="left-nav-options left-nav-heading">ElectronUI</a></li>
+                    <li class="left-nav-heading"><a href="#" class="left-nav-options">ElectronUI</a></li>
                     <li><a href="../index.html" class="left-nav-options">Home</a></li>
-                    <li><a href="components.html" class="left-nav-options">Components</a></li>
+                    <li><a href="#" class="left-nav-options">Components</a></li>
                     <li><a href="avtar.html" class="component-list">Avtaar</a></li>
                     <li><a href="alert.html" class="component-list">Alert</a></li>
                     <li><a href="badge.html" class="component-list">Badge</a></li>
                     <li><a href="button.html" class="component-list">Button</a></li>
                     <li><a href="card.html" class="component-list">Card</a></li>
                     <li><a href="image.html" class="component-list">Image</a></li>
-                    <li><a href="textbox.html" class="component-list">TextBox</a></li>
+                    
                     <li><a href="list.html" class="component-list">List</a></li>
                     <li><a href="navigation.html" class="component-list">Navigation</a></li>
                     <li><a href="modal.html" class="component-list">Modal</a></li>
-                </ul>
-            </div>
-            <img src="../assests/images/hamburger-white.svg" alt="hamburger" class="hamburger" onclick="openNav()">
-            <div class="right-nav">
-                <ul>
-                    <li><img src="../assests/images/GitHub-Icon.svg" alt="GitHub" class="github" height="32px" width="32px"></li>
                 </ul>
             </div>
         </nav>
@@ -41,30 +51,32 @@
         <main onclick="closeNav()">
             <div id="alert" class="component-container">
                 <h2>Alert</h2>
-                <p>Alert is alert and you cannot do anything about it.</p>
+                <p>Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
 
                 <!-- Simple Alerts -->
-                <div class="component">
-                    <h3>Simple Alerts</h3>
+                <div class="component-bg">
+                    <p>Simple Alerts</p>
 
-                    <div class="alert error">
-                        <i class="fa fa-exclamation-circle fa-icon"></i>
-                        <span>This is an error alert!</span>
-                    </div>
-
-                    <div class="alert warning">
-                        <i class="fa fa-exclamation-triangle fa-icon"></i>
-                        <span>This is a warning alert!</span>
-                    </div>
-
-                    <div class="alert info">
-                        <i class="fa  fa-info-circle fa-icon"></i>
-                        <span>This is an info alert!</span>
-                    </div>
-
-                    <div class="alert success">
-                        <i class="fa fa-check-square-o fa-icon"></i>
-                        <span>This is a success alert!</span>
+                    <div class="component">
+                        <div class="alert error">
+                            <i class="fa fa-exclamation-circle fa-icon"></i>
+                            <span>This is an error alert!</span>
+                        </div>
+    
+                        <div class="alert warning">
+                            <i class="fa fa-exclamation-triangle fa-icon"></i>
+                            <span>This is a warning alert!</span>
+                        </div>
+    
+                        <div class="alert info">
+                            <i class="fa  fa-info-circle fa-icon"></i>
+                            <span>This is an info alert!</span>
+                        </div>
+    
+                        <div class="alert success">
+                            <i class="fa fa-check-square-o fa-icon"></i>
+                            <span>This is a success alert!</span>
+                        </div>
                     </div>
 
                     <iframe
@@ -74,31 +86,33 @@
                 </div>
 
                 <!-- Description Alerts -->
-                <div class="component">
-                    <h3>Description Alerts</h3>
+                <div class="component-bg">
+                    <p>Description Alerts</p>
 
-                    <div class="alert error">
-                        <i class="fa fa-exclamation-circle fa-icon"></i>
-                        <span class="alert-title">ERROR</span>
-                        <span class="alert-description">This is an error alert!</span>
-                    </div>
-
-                    <div class="alert warning">
-                        <i class="fa fa-exclamation-triangle fa-icon"></i>
-                        <span class="alert-title">WARNING</span>
-                        <span class="alert-description">This is a warning alert!</span>
-                    </div>
-
-                    <div class="alert info">
-                        <i class="fa  fa-info-circle fa-icon"></i>
-                        <span class="alert-title">INFO</span>
-                        <span class="alert-description">This is an info alert!</span>
-                    </div>
-
-                    <div class="alert success">
-                        <i class="fa fa-check-square-o fa-icon"></i>
-                        <span class="alert-title">SUCCESS</span>
-                        <span class="alert-description">This is a success alert!</span>
+                    <div class="component">
+                        <div class="alert error">
+                            <i class="fa fa-exclamation-circle fa-icon"></i>
+                            <span class="alert-title">ERROR</span>
+                            <span class="alert-description">This is an error alert!</span>
+                        </div>
+    
+                        <div class="alert warning">
+                            <i class="fa fa-exclamation-triangle fa-icon"></i>
+                            <span class="alert-title">WARNING</span>
+                            <span class="alert-description">This is a warning alert!</span>
+                        </div>
+    
+                        <div class="alert info">
+                            <i class="fa  fa-info-circle fa-icon"></i>
+                            <span class="alert-title">INFO</span>
+                            <span class="alert-description">This is an info alert!</span>
+                        </div>
+    
+                        <div class="alert success">
+                            <i class="fa fa-check-square-o fa-icon"></i>
+                            <span class="alert-title">SUCCESS</span>
+                            <span class="alert-description">This is a success alert!</span>
+                        </div>
                     </div>
 
                     <iframe
@@ -109,6 +123,7 @@
 
             </div>
         </main>
-    </div>
+
+    </section>
 </body>
 </html>
